@@ -957,4 +957,19 @@ body {
     .view-steps-btn {
         font-size: 0.8rem;
     }
+
+    /* 头部右上角“管理模式”按钮：缩小并更靠右 */
+    .controls {
+        top: 12px;
+        right: 8px;
+    }
+    .controls .btn {
+        padding: 6px 10px;
+        font-size: 0.75rem;
+        white-space: nowrap;
+    }
+    .controls .btn i {
+        margin-right: 4px;
+        font-size: 1em;
+    }
 }

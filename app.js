@@ -619,7 +619,7 @@ class CoupleMenuApp {
         
         if (this.currentMode === 'manager') {
             if (addDishBtn) addDishBtn.style.display = 'block';
-            if (toggleModeBtn) toggleModeBtn.innerHTML = '<i class="fas fa-user"></i> 浏览者模式';
+            if (toggleModeBtn) toggleModeBtn.innerHTML = '<i class="fas fa-user"></i> 浏览模式';
             document.body.classList.add('manager-mode');
             
             if (viewerSection) viewerSection.style.display = 'none';
@@ -629,7 +629,7 @@ class CoupleMenuApp {
             this.renderOrderHistory();
         } else {
             if (addDishBtn) addDishBtn.style.display = 'none';
-            if (toggleModeBtn) toggleModeBtn.innerHTML = '<i class="fas fa-user-shield"></i> 管理者模式';
+            if (toggleModeBtn) toggleModeBtn.innerHTML = '<i class="fas fa-user-shield"></i> 管理模式';
             document.body.classList.remove('manager-mode');
             
             if (viewerSection) viewerSection.style.display = 'block';
