@@ -144,7 +144,7 @@ class CoupleMenuApp {
                 price: 0.50,
                 description: "心形煎蛋，充满爱意的早餐",
                 steps: "1. 热锅冷油，打入鸡蛋。\n2. 用模具或锅铲塑成心形。\n3. 小火慢煎，撒上盐和胡椒。",
-                image: './image/1.png'
+                image: './image/1.webp'
             },
             {
                 id: '2',
@@ -152,7 +152,7 @@ class CoupleMenuApp {
                 price: 0.80,
                 description: "新鲜草莓制作的美味饼干",
                 steps: "1. 黄油软化，加糖打发。\n2. 筛入面粉，拌入草莓丁。\n3. 烤箱预热180度，烤15分钟。",
-                image: './image/2.png'
+                image: './image/2.webp'
             },
 
             {
@@ -161,7 +161,7 @@ class CoupleMenuApp {
                 price: 0.75,
                 description: "新鲜时令水果搭配",
                 steps: "1. 将各种水果切块。\n2. 淋上酸奶或沙拉酱。\n3. 轻轻拌匀即可。",
-                image: './image/3.png'
+                image: './image/3.webp'
             },
             {
                 id: '4',            
@@ -169,7 +169,7 @@ class CoupleMenuApp {
                 price: 0.30,
                 description: "松软香甜的小馒头",
                 steps: "1. 面粉、酵母、牛奶混合。\n2. 揉成光滑面团，发酵。\n3. 整形后烤箱蒸15分钟。",
-                image: './image/4.png'
+                image: './image/4.webp'
             },
             {
                 id: '5',
@@ -177,7 +177,7 @@ class CoupleMenuApp {
                 price: 0.60,
                 description: "温润去燥的蜂蜜柚子茶",
                 steps: "1. 柚子用盐搓洗干净。\n2. 剥出果肉，切丝。\n3. 与冰糖同煮，冷却后加蜂蜜。",
-                image: './image/5.png'
+                image: './image/5.webp'
             },
             {
                 id: '6',
@@ -185,7 +185,7 @@ class CoupleMenuApp {
                 price: 0.50,
                 description: "香浓入味的电饭煲闷饭",
                 steps: "1. 将大米淘洗干净，放入电饭煲。\n2. 加入适量水，选择煮饭模式。\n3. 等待电饭煲提示，即可享用。",
-                image: "./image/6.png"
+                image: "./image/6.webp"
             },
             {
                 id: '7',
@@ -193,7 +193,7 @@ class CoupleMenuApp {
                 price: 0.80,
                 description: "外酥里嫩的铁板豆腐，香气四溢",
                 steps: "1. 豆腐切厚片，用厨房纸吸干水分。\n2. 热铁板或平底锅，倒少许油。\n3. 将豆腐煎至两面金黄。\n4. 加入调味酱汁，小火收汁入味。\n5. 撒葱花或芝麻点缀。",
-                image: "./image/7.jpg"
+                image: "./image/7.webp"
             },
             {
                 id: '8',
@@ -201,7 +201,7 @@ class CoupleMenuApp {
                 price: 0.80,
                 description: "鲜嫩多汁的牛肉配上香甜洋葱，热腾腾的铁板香气扑鼻",
                 steps: "1. 牛肉切片,用酱油、料酒、淀粉腌制15分钟。\n2. 洋葱切丝备用。\n3. 热铁板或平底锅，倒少许油。\n4. 大火快炒牛肉至变色，盛出备用。\n5. 洋葱丝炒香后加入牛肉，倒入调味汁。\n6. 小火收汁，撒葱花装盘上桌。",
-                image: "./image/8.jpg"
+                image: "./image/8.webp"
             }
         ];
     }
@@ -687,7 +687,7 @@ class CoupleMenuApp {
             
             // 图片显示逻辑
             const imageHtml = item.image ? 
-                `<img src="${item.image}" alt="${item.name}" class="dish-image">` : 
+                `<img src="${item.image}" alt="${item.name}" class="dish-image" loading="lazy" decoding="async">` : 
                 `<div class="default-image"><i class="fas fa-utensils"></i></div>`;
             
             menuItem.innerHTML = `
